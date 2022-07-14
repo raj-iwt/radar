@@ -24,7 +24,10 @@ module.exports = merge(common, {
       'process.env.ENVIRONMENT': JSON.stringify('development'),
     }),
     new CopyPlugin({
-      patterns: [{ from: 'src/config.json', to: '' }],
+      patterns: [
+        { from: 'src/config.json', to: '' },
+        { from: 'src/radar.csv', to: '' },
+      ],
     }),
   ],
   devtool: 'source-map',

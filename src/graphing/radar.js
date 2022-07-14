@@ -527,9 +527,9 @@ const Radar = function (size, radar) {
   }
 
   function plotHeader() {
-    document.querySelector('.hero-banner__title-text').innerHTML = document.title
+    // document.querySelector('.hero-banner__title-text').innerHTML = document.title
     const radarWrapper = d3.select('main .graph-placeholder')
-    document.querySelector('.hero-banner__title-text').addEventListener('click', redrawFullRadar)
+    // document.querySelector('.hero-banner__title-text').addEventListener('click', redrawFullRadar)
 
     buttonsGroup = radarWrapper.append('div').classed('buttons-group', true)
 
